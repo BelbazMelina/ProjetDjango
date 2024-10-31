@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from django.shortcuts import render, get_object_or_404
 from .models import Collec
 
@@ -10,3 +11,8 @@ def collection_detail(request, n):
        return render(request
        ,'collec_management/collection_detail.html'
        , {'collection': collection})
+       
+def about(request):
+    return render(request,'collec_management/presentation.html')
+
+    
