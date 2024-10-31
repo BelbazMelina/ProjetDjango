@@ -18,6 +18,7 @@ workspace
 (django) [ mimichaouaa | ~/workspace/cc ]     python manage.py startapp collec_management
 #ensuite on ouvre le doc cc et ensuite settings.py dans terminal linux
 cd CC1
+cd dockerCC
 cd cc
 cd cc
 cd cc
