@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Collections</title>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Liste des Collections</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Date de Création</th>
+                    <th>Détails</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for collection in collections %}
+                <tr>
+                    <td>{{ collection.title }}</td>
+                    <td>{{ collection.date_creation }}</td>
+                    <td><a href="{% url 'collection_detail' collection.id %}">Voir Détails</a></td>
+                    <td><a href="{% url 'collection_delete' collection.id %}">Supprimer</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
