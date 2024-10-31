@@ -10,3 +10,7 @@ def collection_detail(request, n):
        return render(request
        ,'collec_management/collection_detail.html'
        , {'collection': collection})
+
+
+def about(request):
+    return render(request,'collec_management/presentation.html')

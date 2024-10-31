@@ -2,6 +2,12 @@
 - Belbaz Belkais Melina: belkais-melina.belbaz@etu.univ-orleans.fr
 - HIBAT ALLAH MAZER : hibat-allah.mazer@etu.univ-orleans.fr
 - zenasni amina : amina.zenasni@etu.univ-orleans.fr
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+
+>>>>>>> 4e9d6aa53b81c6260c10b96914480076547946dc
 # les commandes :
 # Question 1:
 # sur terminal linux
