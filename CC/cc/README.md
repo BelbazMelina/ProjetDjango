@@ -20,8 +20,6 @@ workspace
 cd CC1
 cd dockerCC
 cd cc
-cd cc
-cd cc
 cd settings.py 
 #on ajoute la ligne suite 
      INSTALLED_APPS = [
@@ -30,6 +28,4 @@ cd settings.py
      ]
      
 cd ..
-cd..
-cd.. 
 nano read.me
