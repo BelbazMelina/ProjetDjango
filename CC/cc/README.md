@@ -3,7 +3,6 @@
 - HIBAT ALLAH MAZER : hibat-allah.mazer@etu.univ-orleans.fr
 - zenasni amina : amina.zenasni@etu.univ-orleans.fr
 
-<<<<<<< HEAD
 
 # les commandes :
 # Question 1:
@@ -24,4 +23,3 @@
          ...
          'collec_management',
      ]
->>>>>>> e325e5b03fbc52bd980203a43083d20f72c912ad
