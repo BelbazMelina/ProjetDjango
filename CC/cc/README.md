@@ -21,4 +21,13 @@
          ...
          'collec_management',
      ]
+# ajout de fichier json 
+(django) [ dell | ~/workspace/cc ] python manage.py loaddata examples
+Installed 12 object(s) from 1 fixture(s)
+# Vérification : vérifier que les collections ont bien été ajoutées :
 
+- python manage.py shell
+- Puis dans le shell :
+
+- from myapp.models import Collec
+- Collec.objects.all()

@@ -1,0 +1,14 @@
+[
+    {"model": "collec_management.collec", "pk": 1, "fields": {"title": "Collection de Printemps", "description": "Une collection inspirée du printemps.", "date_creation": "2024-03-20"}},
+    {"model": "collec_management.collec", "pk": 2, "fields": {"title": "Collection d'Été", "description": "Une collection pour l'été avec des designs frais.", "date_creation": "2024-06-21"}},
+    {"model": "collec_management.collec", "pk": 3, "fields": {"title": "Collection d'Automne", "description": "Couleurs chaudes et ambiance automnale.", "date_creation": "2024-09-22"}},
+    {"model": "collec_management.collec", "pk": 4, "fields": {"title": "Collection Hiver", "description": "Inspirée des montagnes et de la neige.", "date_creation": "2024-12-21"}},
+    {"model": "collec_management.collec", "pk": 5, "fields": {"title": "Collection Urbain", "description": "Pour les amoureux de la ville.", "date_creation": "2024-01-10"}},
+    {"model": "collec_management.collec", "pk": 6, "fields": {"title": "Collection Nature", "description": "Un retour aux sources avec des motifs naturels.", "date_creation": "2024-04-15"}},
+    {"model": "collec_management.collec", "pk": 7, "fields": {"title": "Collection Minimaliste", "description": "Pour les fans du style épuré.", "date_creation": "2024-05-05"}},
+    {"model": "collec_management.collec", "pk": 8, "fields": {"title": "Collection Vintage", "description": "Un look rétro pour les nostalgiques.", "date_creation": "2024-07-10"}},
+    {"model": "collec_management.collec", "pk": 9, "fields": {"title": "Collection Bohème", "description": "Style bohème et décontracté.", "date_creation": "2024-08-15"}},
+    {"model": "collec_management.collec", "pk": 10, "fields": {"title": "Collection Sport", "description": "Pour les amateurs de sport.", "date_creation": "2024-09-05"}},
+    {"model": "collec_management.collec", "pk": 11, "fields": {"title": "Collection Luxe", "description": "Matériaux de haute qualité pour un look chic.", "date_creation": "2024-10-01"}},
+    {"model": "collec_management.collec", "pk": 12, "fields": {"title": "Collection Casual", "description": "Décontracté et confortable.", "date_creation": "2024-11-12"}}
+]
