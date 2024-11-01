@@ -9,5 +9,5 @@ urlpatterns = [
        path('all/', views.collection_list, name='collection_list'), #6 Nouvelle route pour la liste des collections
        path('new/', views.new_collec, name='new_collec'),#7
        path('delete/<int:n>/', views.collection_delete, name='collection_delete'),#8 Route pour la suppression
-       path('edit/<int:id>/', views.edit_collection, name='edit_collection'),      
+       path('change/<int:n>/', views.edit_collection, name='edit_collection'),
 ]

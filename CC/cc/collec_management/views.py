@@ -52,15 +52,14 @@ def collection_delete(request, n):
  
   return render(request, 'collec_management/collection_confirm_delete.html', {'collection': collection})
     
-
-def edit_collection(request, id):
-    collection = get_object_or_404(Collec, pk=id)
+def edit_collection(request, n):
+    collection = get_object_or_404(Collec, id=n)
     if request.method == 'POST':
         form = CollecForm(request.POST, instance=collection)
         if form.is_valid():
             form.save()
-            return redirect('collection_list', id=collection.id)
+            return redirect('collection_detail', n=collection.id)
     else:
         form = CollecForm(instance=collection)
-    return render(request, 'edit_collection.html', {'form': form})
+    return render(request, 'collec_management/edit_collection.html',{'form': form})
 

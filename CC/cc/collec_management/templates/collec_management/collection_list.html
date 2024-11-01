@@ -26,6 +26,8 @@
                     <td>{{ collection.date_creation }}</td>
                     <td><a href="{% url 'collection_detail' collection.id %}">Voir Détails</a></td>
                     <td><a href="{% url 'collection_delete' collection.id %}">Supprimer</a></td>
+                    <td><a href="{% url 'edit_collection' collection.id %}">Modifier</a></td>
+
                 </tr>
                 {% endfor %}
             </tbody>

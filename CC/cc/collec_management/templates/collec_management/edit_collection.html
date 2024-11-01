@@ -7,14 +7,12 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h1 class="mb-4">Modifier la collection</h1>
+        <h1>Modifier la collection "{{ collection.title }}"</h1>
         <form method="post">
             {% csrf_token %}
-            <div class="form-group">
-                {{ form.as_p }}
-            </div>
-            <button type="submit" class="btn btn-primary">Modifier</button>
-            <a href="{% url 'collection_list' %}" class="btn btn-secondary">Annuler</a>
+            {{ form.as_p }}
+            <button type="submit">Enregistrer les modifications</button>
+            <a href="{% url 'collection_list' %}">Annuler</a>
         </form>
     </div>
 </body>
