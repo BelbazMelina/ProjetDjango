@@ -2,11 +2,7 @@
 - Belbaz Belkais Melina: belkais-melina.belbaz@etu.univ-orleans.fr
 - HIBAT ALLAH MAZER : hibat-allah.mazer@etu.univ-orleans.fr
 - zenasni amina : amina.zenasni@etu.univ-orleans.fr
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 4e9d6aa53b81c6260c10b96914480076547946dc
 # les commandes :
 # Question 1:
 # sur terminal linux
@@ -26,7 +22,6 @@
          ...
          'collec_management',
      ]
-<<<<<<< HEAD
 # ajout de fichier json 
 (django) [ dell | ~/workspace/cc ] python manage.py loaddata examples
 Installed 12 object(s) from 1 fixture(s)
@@ -37,5 +32,7 @@ Installed 12 object(s) from 1 fixture(s)
 
 - from myapp.models import Collec
 - Collec.objects.all()
-=======
->>>>>>> 9f33fbe47055acf0594a62b187d6b205f125af9b
+# pour boostrap 
+- pip install django-bootstrap5
+
+

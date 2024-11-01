@@ -63,3 +63,6 @@ def edit_collection(request, n):
         form = CollecForm(instance=collection)
     return render(request, 'collec_management/edit_collection.html',{'form': form})
 
+def home(request):
+    return render(request, 'collec_management/home.html')
+

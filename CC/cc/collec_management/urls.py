@@ -4,6 +4,7 @@ from django.urls import path
 from . import views 
 
 urlpatterns = [
+        path('', views.home, name='home'),
        path ("about/",views.about, name="about"),
        path('collection/<int:n>/', views.collection_detail, name='collection_detail'),#5
        path('all/', views.collection_list, name='collection_list'), #6 Nouvelle route pour la liste des collections
