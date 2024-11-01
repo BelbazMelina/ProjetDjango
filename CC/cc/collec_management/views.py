@@ -1,9 +1,11 @@
 
 from django.shortcuts import render
-from django.shortcuts import render,HttpResponseRedirect
+from django.shortcuts import redirect,HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .models import Collec
-from datetime import timezone
+from .forms import CollecForm
+from django.utils import timezone
+
 
 # Create your views here.
  
@@ -16,7 +18,7 @@ def about(request):
 def collection_detail(request, n):
        collection = get_object_or_404(Collec, id=n)
        return render(request
-       ,'collec_management/collection_detail.html'
+       ,'collec_management/collec_details.html'
        , {'collection': collection})
 #Q6
 
