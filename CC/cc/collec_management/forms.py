@@ -5,3 +5,7 @@ class CollecForm(forms.ModelForm):
     class Meta:
         model = Collec
         fields = ['title', 'description']
+
+        labels = {
+            "title" : "Titre",
+        }
