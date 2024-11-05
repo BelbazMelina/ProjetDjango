@@ -1,15 +1,26 @@
+
+{% extends "collec_management/base.html" %}
+{% block content %}
+{% load static %}
+{% load django_bootstrap5 %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Nouvelle Collection</title>
+    {% bootstrap_css %}
 </head>
 <body>
-    <h1>Ajouter une nouvelle collection</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form }}
-        <button type="submit">Enregistrer</button>
-    </form>
+    <div class="container mt-5">
+        <h1>Ajouter une nouvelle collection</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn btn-success">Enregistrer</button>
+            <a href="{% url 'collection_list' %}" class="btn btn-danger">Annuler</a>
+        </form>
+    </div>
+    {% endblock %}
+    {% bootstrap_javascript %}
 </body>
 </html>
