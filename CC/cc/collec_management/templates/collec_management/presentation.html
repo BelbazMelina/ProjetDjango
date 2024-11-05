@@ -1,7 +1,18 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head><meta charset="utf-8"></head>
-<body>
-    <h1>La presentation de l'application</h1>
-</body>
-</html>
+{% extends "collec_management/base.html" %}
+{% load django_bootstrap5 %}
+
+
+
+{% block content %}
+<div class="mt-5">
+    <h2 class="text-center mb-4">Présentation de notre projet</h2></div>
+    
+        <h4><em>Bienvenue dans l'application de gestion des <b>collections</b>.</em></h4><br>
+<p><em>Notre application vous permet de créer, visualiser et gérer vos collections (supprimer, modifier) de manière rapide et facile.</em></p>
+<p><em>Vous pouvez consulter toutes les collections, il vous suffit d'ajouter à votre URL : <b>/all/</b> dans votre navigateur.</em></p>
+<p><em>Vous pouvez consulter une collection spécifique en utilisant son ID, il vous suffit d'ajouter à votre URL : <b>/collection/(id)/</b> dans votre navigateur.</em></p>
+<p><em>Pour créer une nouvelle collection, il vous suffit d'ajouter à votre URL : <b>/new/</b> dans votre navigateur.</em></p>
+<p><em>Pour modifier une collection existante, il vous suffit d'ajouter à votre URL : <b>/edit/(id)/</b> dans votre navigateur.</em></p>
+<p><em>Pour supprimer une collection, il vous suffit d'ajouter à votre URL : <b>/delete/(id)/</b> dans votre navigateur.</em></p>
+    
+{% endblock %}
