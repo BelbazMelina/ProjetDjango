@@ -8,7 +8,7 @@
     <form method="post">
         {% csrf_token %}
         <div class="mb-3">
-            {{ form|bootstrap }}
+            {% bootstrap_form form %}
         </div>
         <button type="submit" class="btn btn-primary">Modifier</button>
         <a href="{% url 'collection_list' %}" class="btn btn-secondary">Annuler</a>
