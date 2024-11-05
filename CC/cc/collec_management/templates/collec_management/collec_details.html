@@ -1,11 +1,11 @@
 {% extends "collec_management/base.html" %}
 {% load django_bootstrap5 %}
 
-{% block title %}Détails de la Collection{% endblock %}
+{% block title %}<em><h2>Détails de la Collection</h2></em>{% endblock %}
 
 {% block content %}
 <div class="container mt-5">
-    <h1 class="text-center">{{ collection.title }}</h1>
+    <h2 class="text-center">{{ collection.title }}</h2>
     <div class="card">
         <div class="card-body">
             <p class="lead"><strong>Description:</strong> {{ collection.description }}</p>
