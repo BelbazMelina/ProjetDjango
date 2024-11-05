@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier la collection</title>
-</head>
-<body>
-    <div class="container mt-4">
-        <h1 class="mb-4">Modifier la collection</h1>
-        <form method="post">
-            {% csrf_token %}
-            <div class="form-group">
-                {{ form.as_p }}
-            </div>
-            <button type="submit" class="btn btn-primary">Modifier</button>
-            <a href="{% url 'collection_list' %}" class="btn btn-secondary">Annuler</a>
-        </form>
-    </div>
-</body>
-</html>
+{% extends "collec_management/base.html" %}
+{% load django_bootstrap5 %}
+{% block title %}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Modifier la collection</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form|bootstrap }}
+        </div>
+        <button type="submit" class="btn btn-primary">Modifier</button>
+        <a href="{% url 'collection_list' %}" class="btn btn-secondary">Annuler</a>
+    </form>
+</div>
+{% endblock %}
