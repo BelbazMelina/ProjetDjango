@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmer la Suppression</title>
-</head>
-<body>
-    <h1>Confirmer la Suppression</h1>
-    <p>Êtes-vous sûr de vouloir supprimer la collection "{{ collection.title }}" ?</p>
-    <form method="post">
-        {% csrf_token %}
-        <button type="submit">Confirmer</button>
-        <a href="{% url 'collection_list' %}">Annuler</a>
-    </form>
-</body>
-</html>
+{% extends "collec_management/base.html" %}
+{% load bootstrap5 %}
+{% block title %}Confirmer la Suppression{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title mb-4">Confirmer la Suppression</h1>
+            <p class="card-text">Êtes-vous sûr de vouloir supprimer la collection "<strong>{{ collection.title }}</strong>" ?</p>
+            <form method="post">
+                {% csrf_token %}
+                <div class="d-flex justify-content-start">
+                    <button type="submit" class="btn btn-danger me-2">Confirmer</button>
+                    <a href="{% url 'collection_list' %}" class="btn btn-secondary">Annuler</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
