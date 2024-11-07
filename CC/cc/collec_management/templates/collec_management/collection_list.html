@@ -4,13 +4,15 @@
     <h2 class="mb-4">Liste des Collections</h2>
     <a href="{% url 'new_collec' %}" class="btn btn-primary mb-3">Ajouter une Collection</a>
 
-    <!-- Tableau Bootstrap -->
+   
     <table class="table table-striped table-bordered shadow-sm">
         <thead class="table-primary">
             <tr>
                 <th>Nom de la Collection</th>
                 <th>Date de Création</th>
-                <th>Actions</th>
+                <th>Details</th>
+                <th>Modification</th>
+                <th>Suppression</th>
             </tr>
         </thead>
         <tbody>
@@ -18,9 +20,12 @@
                 <tr>
                     <td>{{ collection.title }}</td>
                     <td>{{ collection.date_creation|date:"d/m/Y" }}</td>
+                    <td><a href="{% url 'collection_detail' collection.id %}">Détails</a></td>
                     <td>
-                        <a href="{% url 'edit_collection' collection.id %}" class="btn btn-sm btn-warning">Modifier</a>
-                        <a href="{% url 'collection_delete' collection.id %}" class="btn btn-sm btn-danger">Supprimer</a>
+                        <a href="{% url 'edit_collection' collection.id %}">Modifier</a>
+                        </td>
+                        <td>
+                        <a href="{% url 'collection_delete' collection.id %}" >Supprimer</a>
                     </td>
                 </tr>
             {% empty %}
